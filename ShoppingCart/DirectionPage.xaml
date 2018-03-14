@@ -5,14 +5,14 @@
              Title="Direccion">
 
     <StackLayout Padding="12">
-        <Label Text="Datos para tus envios" FontFamily="Large" FontAttributes="Bold" />
+        <Label Text="Datos para tus envíos" FontFamily="Large" FontAttributes="Bold" />
         <Label Text="Estado" FontSize="Medium"/>
         <Entry x:Name="BoxProvincia" Text="{Binding Provincia}" />
         <Label Text="Ciudad" FontSize="Medium"/>
         <Entry x:Name="BoxCiudad" Text="{Binding Ciudad}" />
-        <Label Text="Direccion" FontSize="Medium"/>
+        <Label Text="Dirección" FontSize="Medium"/>
         <Entry x:Name="BoxDireccion" Text="{Binding Direccion}" />
-        <Label Text="Codigo Postal" FontSize="Medium"/>
+        <Label Text="Código Postal" FontSize="Medium"/>
         <Entry x:Name="BoxCP" Text="{Binding CodigoPostal}" />
         <Button Text="Guardar" x:Name="BtnSave" Clicked="BtnSave_Clicked" />
     </StackLayout>

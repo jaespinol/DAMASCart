@@ -9,8 +9,8 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <StackLayout Padding="12" Grid.Row="0">
-            <Label Text="Garantia" FontSize="Medium"/>
-            <Label Text="Captura los datos del cliente para cubrir la garantia." />
+            <Label Text="Garantía" FontSize="Medium"/>
+            <Label Text="Captura los datos del cliente para cubrir la garantía." />
         
             <Label Text="Nombre completo" Margin="0,20,0,0" />
             <Entry Text="{Binding Nombre}"/>

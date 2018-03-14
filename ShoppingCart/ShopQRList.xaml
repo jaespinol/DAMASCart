@@ -19,7 +19,7 @@
         </StackLayout>
         <Image Source="{Binding QRCode}" Grid.Row="1" Margin="12"/>
         <StackLayout Grid.Row="2" Padding="12">
-            <Button Text="Registrar garantia para el cliente" x:Name="BtnGarantia" Clicked="BtnGarantia_Clicked"/>
+            <Button Text="Registrar garantía para el cliente" x:Name="BtnGarantia" Clicked="BtnGarantia_Clicked"/>
         </StackLayout>
     </Grid>
     

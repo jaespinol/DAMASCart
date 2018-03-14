@@ -298,7 +298,7 @@ namespace ShoppingCart
                     }
                     else
                     {
-                        await DisplayAlert(App.AppName, "Revisa tu conexion a internet", "Aceptar");
+                        await DisplayAlert(App.AppName, "Revisa tu conexión a internet", "Aceptar");
                     }
                 }
                 else

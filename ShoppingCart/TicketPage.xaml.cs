@@ -111,7 +111,7 @@ namespace ShoppingCart
                     }
                     else
                     {
-                        await DisplayAlert(App.AppName, "No encontramos información para tu usuario, intenta más tarde...", "Aceptar");
+                        await DisplayAlert(App.AppName, "No encontramos información para tu usuario, intente más tarde...", "Aceptar");
                     }
                 }
                 else
@@ -121,7 +121,7 @@ namespace ShoppingCart
             }
             catch
             {
-                await DisplayAlert(App.AppName, "Verifica tu conexion a internet", "Aceptar");
+                await DisplayAlert(App.AppName, "Verifica tu conexión a internet", "Aceptar");
             }
         }
 
@@ -314,7 +314,7 @@ namespace ShoppingCart
                     }
                     else
                     {
-                        await DisplayAlert(App.AppName, "No encontramos información para tu usuario, intenta más tarde...", "Aceptar");
+                        await DisplayAlert(App.AppName, "No encontramos información para tu usuario, intente más tarde...", "Aceptar");
                     }
                 }
                 else
@@ -324,7 +324,7 @@ namespace ShoppingCart
             }
             catch
             {
-                await DisplayAlert(App.AppName, "Verifica tu conexion a internet", "Aceptar");
+                await DisplayAlert(App.AppName, "Verifica tu conexión a internet", "Aceptar");
             }
         }
 
@@ -526,7 +526,7 @@ namespace ShoppingCart
             }
             catch
             {
-                await DisplayAlert(App.AppName, "Verifica tu conexion a internet", "Aceptar");
+                await DisplayAlert(App.AppName, "Verifica tu conexión a internet", "Aceptar");
             }
         }
 
@@ -735,7 +735,7 @@ namespace ShoppingCart
             }
             else
             {
-                await DisplayAlert(App.AppName, "Aun no se ha subido la foto del boucher", "Aceptar");
+                await DisplayAlert(App.AppName, "Aún no se ha subido la foto del boucher", "Aceptar");
             }
         }
     }

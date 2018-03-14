@@ -12,11 +12,11 @@
             <Entry x:Name="BoxNombre" Placeholder="nombre" />
             <Label Text="Ingresa tus apellidos"></Label>
             <Entry x:Name="BoxApellido" Placeholder="apellidos" />
-            <Label Text="Ingresa un correo electronico"></Label>
+            <Label Text="Ingresa un correo electrónico"></Label>
             <Entry x:Name="BoxEmail" Placeholder="correo" />
-            <Label Text="Confirmar correo electronico"></Label>
+            <Label Text="Confirmar correo electrónico"></Label>
             <Entry x:Name="BoxEmailVerify" Placeholder="correo" />
-            <Label Text="Ingresa tu telefono"></Label>
+            <Label Text="Ingresa tu teléfono"></Label>
             <Entry x:Name="BoxTelefono" Placeholder="telefono" />
             <Label Text="Ingresa un usuario"></Label>
             <Entry x:Name="BoxUsuario" Placeholder="usuario" />

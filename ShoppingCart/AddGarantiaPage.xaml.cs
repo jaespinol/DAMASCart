@@ -62,7 +62,7 @@ namespace ShoppingCart
                     }
                 }
 
-                await DisplayAlert(App.AppName, "Ocurrio un error al guardar los datos, intenta de nuevo más tarde", "Aceptar");
+                await DisplayAlert(App.AppName, "Ocurrió un error al guardar los datos, intenta de nuevo más tarde", "Aceptar");
             }
         }
     }

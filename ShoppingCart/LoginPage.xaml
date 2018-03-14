@@ -9,7 +9,7 @@
         <Entry x:Name="BoxUser"/>
         <Label Text="Ingresa tu contraseña"></Label>
         <Entry x:Name="BoxPassword" IsPassword="True"/>
-        <Button Text="Iniciar sesion" x:Name="BtnLogin" Clicked="BtnLogin_Clicked"/>
+        <Button Text="Iniciar sesión" x:Name="BtnLogin" Clicked="BtnLogin_Clicked"/>
         <Button Text="Registrarse" x:Name="BtnSignin" Clicked="BtnSignin_Clicked"/>
         <Button Text="¿Olvidaste tu contraseña?" x:Name="BtnRecovery" Clicked="BtnRecovery_Clicked"/>
     </StackLayout>

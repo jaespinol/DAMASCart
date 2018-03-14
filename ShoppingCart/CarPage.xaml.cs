@@ -223,7 +223,7 @@ namespace ShoppingCart
                                 return;
                             }
 
-                            await DisplayAlert(App.AppName, "Se edito correctamente el producto en el carrito", "Aceptar");
+                            await DisplayAlert(App.AppName, "Se editó correctamente el producto en el carrito", "Aceptar");
                             Init();
                         }
                         else

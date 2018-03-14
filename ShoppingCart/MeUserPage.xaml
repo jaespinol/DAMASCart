@@ -13,7 +13,7 @@
             <Entry x:Name="BoxCorreo" Text="{Binding Correo}" />
             <Label Text="Nombre" />
             <Entry x:Name="BoxNombre" Text="{Binding Nombre}" />
-            <Label Text="Telefono" />
+            <Label Text="Teléfono" />
             <Entry x:Name="BoxTelefono" Text="{Binding Telefono}" />
             <Button Text="Guardar" x:Name="BtnGuardar" Clicked="BtnGuardar_Clicked" />
         </StackLayout>

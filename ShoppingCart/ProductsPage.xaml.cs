@@ -53,7 +53,7 @@ namespace ShoppingCart
                 }
                 else
                 {
-                    await DisplayAlert(App.AppName, "No pudimos contactar con la tienda, inteta más tarde", "Aceptar");
+                    await DisplayAlert(App.AppName, "No pudimos contactar con la tienda, intente más tarde", "Aceptar");
                 }
             }
             else

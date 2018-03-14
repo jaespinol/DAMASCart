@@ -33,8 +33,8 @@ namespace ShoppingCart
                 if (await this.TextValidate(App.AppName, "Aceptar",
                     new ValidateItem(provincia, "Ingresa un estado"),
                     new ValidateItem(ciudad, "Ingresa tu ciudad"),
-                    new ValidateItem(direccion, "Ingresa tu direcicon"),
-                    new ValidateItem(cp, "Ingresa tu codigo postal")))
+                    new ValidateItem(direccion, "Ingresa tu direcicón"),
+                    new ValidateItem(cp, "Ingresa tu código postal")))
                 {
                     var idusuario = App.Oauth != null ? App.Oauth.IdUsuario.ToString() : "0";
                     DirectionResult result = await App.RestClient.Post<DirectionResult>(App.BaseUrl + "/Direction/Add", new Dictionary<string, object>
@@ -65,13 +65,13 @@ namespace ShoppingCart
                     }
                     else
                     {
-                        await DisplayAlert(App.AppName, "No fue posible guardar los cambios, intenta mas tarde", "Aceptar");
+                        await DisplayAlert(App.AppName, "No fue posible guardar los cambios, intente mas tarde", "Aceptar");
                     }
                 }
             }
             else
             {
-                await DisplayAlert(App.AppName, "Debes de tener una conexion a internet activa", "Aceptar");
+                await DisplayAlert(App.AppName, "Debes de tener una conexión a internet activa", "Aceptar");
             }
         }
     }

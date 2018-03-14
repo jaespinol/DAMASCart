@@ -23,11 +23,11 @@
                         <Entry x:Name="BoxState" Text="{Binding Provincia}" />
                         <Label Text="Ciudad" />
                         <Entry x:Name="BoxCity" Text="{Binding Ciudad}" />
-                        <Label Text="Codigo postal" />
+                        <Label Text="Código postal" />
                         <Entry x:Name="BoxPostalCode" Text="{Binding CodigoPostal}" />
-                        <Label Text="Direccion" />
+                        <Label Text="Dirección" />
                         <Entry x:Name="BoxLine1" Text="{Binding Direccion}" />
-                        <Label Text="Direccion 2" />
+                        <Label Text="Dirección 2" />
                         <Entry x:Name="BoxLine2" />
                         <Label Text="Referencias" />
                         <Entry x:Name="BoxLine3" />

@@ -75,7 +75,7 @@ namespace ShoppingCart
                         return;
                     }
                 }
-                await DisplayAlert(App.AppName, "No encontramos ningun resultado", "Aceptar");
+                await DisplayAlert(App.AppName, "No encontramos ningún resultado", "Aceptar");
             }
             catch (Exception ex)
             {

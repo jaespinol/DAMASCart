@@ -45,15 +45,15 @@ namespace ShoppingCart
 
             if(await this.TextValidate(App.AppName, "Aceptar" ,
                 new ValidateItem(holdername, "Ingresa el nombre del titular"),
-                new ValidateItem(number, "Ingresa el numero de tarjeta"),
-                new ValidateItem(ccv, "Ingresa el numero de cvv"),
+                new ValidateItem(number, "Ingresa el número de tarjeta"),
+                new ValidateItem(ccv, "Ingresa el número de cvv"),
                 new ValidateItem(month, "Ingresa el mes de la tarjeta"),
                 new ValidateItem(year, "Ingresa el año de la tarjeta"),
                 new ValidateItem(state, "Ingresa el nombre del estado donde vives"),
                 new ValidateItem(city, "Ingresa el nombre de tu ciudad"),
-                new ValidateItem(cp.ToString(), "Ingresa tu codigo postal"),
-                new ValidateItem(line1, "Ingresa tu direccion"),
-                new ValidateItem(line2, "Ingresa otra direccion"),
+                new ValidateItem(cp.ToString(), "Ingresa tu código postal"),
+                new ValidateItem(line1, "Ingresa tu dirección"),
+                new ValidateItem(line2, "Ingresa otra dirección"),
                 new ValidateItem(line3, "Ingresa una referencia")))
             {
                 _card = new Openpay.Card
@@ -122,7 +122,7 @@ namespace ShoppingCart
                 }
                 else
                 {
-                    await DisplayAlert(App.AppName, "Tuvismo un problema al validar tu tarjeta, revisa los datos e intenta de nuevo.", "Aceptar");
+                    await DisplayAlert(App.AppName, "Tuvimos un problema al validar tu tarjeta, revisa los datos e intenta de nuevo.", "Aceptar");
                 }
             }
             BtnSave.IsEnabled = true;

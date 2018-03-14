@@ -25,7 +25,7 @@ namespace ShoppingCart
 
             if (string.IsNullOrEmpty(email))
             {
-                await DisplayAlert(App.AppName, "Ingresa un correo electronico", "Aceptar");
+                await DisplayAlert(App.AppName, "Ingresa un correo electrónico", "Aceptar");
             }
             else
             { 

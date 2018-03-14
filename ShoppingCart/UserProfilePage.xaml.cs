@@ -29,7 +29,7 @@ namespace ShoppingCart
             {
                 StackDirection.BindingContext = _oauth.Direction;
                 StackDirection.IsVisible = true;
-                BtnDireccion.Text = "Actualizar direccion";
+                BtnDireccion.Text = "Actualizar dirección";
             }
             _tickets = new ObservableCollection<Ticket>();
             ListOfPurchases.ItemsSource = _tickets;
@@ -91,7 +91,7 @@ namespace ShoppingCart
             }
             else
             {
-                await DisplayAlert(App.AppName, "Revisa tu conexion a internet", "Aceptar");
+                await DisplayAlert(App.AppName, "Revisa tu conexión a internet", "Aceptar");
             }
         }
 
@@ -104,7 +104,7 @@ namespace ShoppingCart
             {
                 StackDirection.BindingContext = App.Oauth.Direction;
                 StackDirection.IsVisible = true;
-                BtnDireccion.Text = "Actualizar direccion";
+                BtnDireccion.Text = "Actualizar dirección";
             }
 
             if (!string.IsNullOrEmpty(App.Oauth.CustomerId))

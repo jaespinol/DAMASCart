@@ -8,7 +8,7 @@
 
     <ContentPage Title="Mis datos" x:Name="UserPage">
         <ContentPage.ToolbarItems>
-            <ToolbarItem Text="Agregar direccion" x:Name="BtnDireccion" Priority="1" Order="Primary" Clicked="BtnDireccion_Clicked" />
+            <ToolbarItem Text="Agregar dirección" x:Name="BtnDireccion" Priority="1" Order="Primary" Clicked="BtnDireccion_Clicked" />
         </ContentPage.ToolbarItems>
         <StackLayout Padding="12" Spacing="0">
             <StackLayout x:Name="StackUser">

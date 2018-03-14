@@ -45,7 +45,7 @@ namespace ShoppingCart
             {
                 cvs.MakeTableProduct();
                 await cvs.UploadProduct(AddProduct);
-                await DisplayAlert(App.AppName, "Se subieron los productos", "Aceptar");
+                await DisplayAlert(App.AppName, "Se subierón los productos", "Aceptar");
             }
             catch
             {
@@ -106,7 +106,7 @@ namespace ShoppingCart
                 }
                 else
                 {
-                    await DisplayAlert(App.AppName, "Ocurrio un error al subir stock", "Aceptar");
+                    await DisplayAlert(App.AppName, "Ocurrió un error al subir stock", "Aceptar");
                 }
             }
             catch

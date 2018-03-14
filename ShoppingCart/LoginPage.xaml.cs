@@ -65,12 +65,12 @@ namespace ShoppingCart
                         }
                         else
                         {
-                            await DisplayAlert(App.AppName, "No es posible acceder, intenta más tarde", "Aceptar");
+                            await DisplayAlert(App.AppName, "No es posible acceder, intente más tarde", "Aceptar");
                         }
                     }
                     catch
                     {
-                        await DisplayAlert(App.AppName, "No es posible acceder, intenta más tarde", "Aceptar");
+                        await DisplayAlert(App.AppName, "No es posible acceder, intente más tarde", "Aceptar");
                     }
                 }
                 else
@@ -80,7 +80,7 @@ namespace ShoppingCart
             }
             else
             {
-                await DisplayAlert(App.AppName, "Asegurate de tener conexion a internet", "Aceptar");
+                await DisplayAlert(App.AppName, "Asegurate de tener conexión a internet", "Aceptar");
             }
             BtnLogin.IsEnabled = true;
         }

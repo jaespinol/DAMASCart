@@ -113,13 +113,13 @@ namespace ShoppingCart
                 StackLayout formulario = new StackLayout();
                 Label labeldnicuit = new Label { Text = "Ingresa tu DNI o CUIT" };
                 Entry boxdnicuit = new Entry { Placeholder = "DNI o CUIT", Text = currentdirection != null ? currentdirection.Dnicuit : "" };
-                Label labelempresa = new Label { Text = "Nombre de la empresa con la que recibes tu paqueteria." };
+                Label labelempresa = new Label { Text = "Nombre de la empresa con la que recibes tu paquetería." };
                 Entry boxempresa = new Entry { Placeholder = "DHL/FedEx", Text = currentdirection != null ? currentdirection.Empresa : "" };
                 Label labeldireccion = new Label { Text = "Ingresa tu dirección" };
                 Entry boxdireccion = new Entry { Placeholder = "Calle, No. Interior, No. Exterior", Text = currentdirection != null ? currentdirection.Direccion : "" };
                 Label labelciudad = new Label { Text = "Ingresa el nombre de tu ciudad" };
                 Entry boxciudad = new Entry { Placeholder = "Ciudad", Text = currentdirection != null ? currentdirection.Ciudad : "" };
-                Label labelcp = new Label { Text = "Codigo Postal" };
+                Label labelcp = new Label { Text = "Código Postal" };
                 Entry boxcp = new Entry { Placeholder = "274883", Text = currentdirection != null ? currentdirection.CodigoPostal : "" };
                 Label labelprovincia = new Label { Text = "Ingresa el nombre de tu provincia" };
                 Entry boxprovincia = new Entry { Placeholder = "Provincia", Text = currentdirection != null ? currentdirection.Provincia : "" };
@@ -212,13 +212,13 @@ namespace ShoppingCart
                     else
                     {
                         SwitchAcceptTerms.IsToggled = !e.Value;
-                        await DisplayAlert(App.AppName, "Intent de nuevo más tarde", "Aceptar");
+                        await DisplayAlert(App.AppName, "Intente de nuevo más tarde", "Aceptar");
                     }
                 }
                 else
                 {
                     SwitchAcceptTerms.IsToggled = !e.Value;
-                    await DisplayAlert(App.AppName, "Intent de nuevo más tarde", "Aceptar");
+                    await DisplayAlert(App.AppName, "Intente de nuevo más tarde", "Aceptar");
                 }
             }
             else

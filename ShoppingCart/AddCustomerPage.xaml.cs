@@ -50,13 +50,13 @@ namespace ShoppingCart
                     if (await this.TextValidate(App.AppName, "Aceptar",
                         new ValidateItem(name, "Ingresa un nombre"),
                         new ValidateItem(lastname, "Ingresa tus apellidos"),
-                        new ValidateItem(email, "Ingresa un correo electronico"),
-                        new ValidateItem(phone.ToString(), "Ingresa un telefono"),
+                        new ValidateItem(email, "Ingresa un correo electrónico"),
+                        new ValidateItem(phone.ToString(), "Ingresa un teléfono"),
                         new ValidateItem(state, "Ingresa el nombre del estado"),
                         new ValidateItem(city, "Ingresa tu ciudad"),
-                        new ValidateItem(postalcode.ToString(), "Ingres tu codigo postal"),
-                        new ValidateItem(line1, "Ingresa tu direccion"),
-                        new ValidateItem(line2, "Ingresa otra direccion"),
+                        new ValidateItem(postalcode.ToString(), "Ingres tu código postal"),
+                        new ValidateItem(line1, "Ingresa tu dirección"),
+                        new ValidateItem(line2, "Ingresa otra dirección"),
                         new ValidateItem(line3, "Ingresa una referencia")))
                     {
                         Customer customer = await App.RestClient.Post<Customer, Customer>($"{App.BaseUrl}/Payment/AddClient/{App.IdCliente}", new Customer

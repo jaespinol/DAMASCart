@@ -49,12 +49,12 @@ namespace ShoppingCart
                         }
                         else
                         {
-                            await DisplayAlert(App.AppName, "Intent de nuevo más tarde", "Aceptar");
+                            await DisplayAlert(App.AppName, "Intente de nuevo más tarde", "Aceptar");
                         }
                     }
                     else
                     {
-                        await DisplayAlert(App.AppName, "Intent de nuevo más tarde", "Aceptar");
+                        await DisplayAlert(App.AppName, "Intente de nuevo más tarde", "Aceptar");
                     }
                 }
                 else
