@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.MeUserPage"
+             Title="Datos del usuario">
+    <ContentPage.Content>
+        <StackLayout Padding="12">
+            <Label Text="Alias" />
+            <Entry x:Name="BoxAlias" Text="{Binding Alias}" />
+            <Label Text="Password" />
+            <Entry x:Name="BoxPassword" Text="{Binding Password}" />
+            <Label Text="Correo" />
+            <Entry x:Name="BoxCorreo" Text="{Binding Correo}" />
+            <Label Text="Nombre" />
+            <Entry x:Name="BoxNombre" Text="{Binding Nombre}" />
+            <Label Text="Telefono" />
+            <Entry x:Name="BoxTelefono" Text="{Binding Telefono}" />
+            <Button Text="Guardar" x:Name="BtnGuardar" Clicked="BtnGuardar_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

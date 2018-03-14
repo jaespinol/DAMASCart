@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.ProfilePage"
+             Title="Perfil">
+    <ScrollView>
+        <StackLayout Padding="12">
+            <Label Text="{Binding Nombre}" FontSize="Large" FontAttributes="Bold"/>
+            <Label Text="{Binding Correo}" FontSize="Medium"/>
+            <Label Text="{Binding Telefono}" FontSize="Default" />
+            <StackLayout x:Name="RootLayout">
+
+            </StackLayout>
+            <Button Text="Actualiza tu información de usuario" x:Name="BtnUserUpdate" Clicked="BtnUserUpdate_Clicked"/>
+            <Button Text="Agrega la ubicación de tu local" x:Name="BtnLocalGPS" Clicked="BtnLocalGPS_Clicked"></Button>
+            <StackLayout x:Name="StackPage" IsVisible="False">
+                <Button Text="Página personalizada" x:Name="MyProfilePage" Clicked="MyProfilePage_Clicked"/>
+            </StackLayout>
+            <StackLayout x:Name="StackRedTecnicos" IsVisible="False">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Red de técnicos cerca" HorizontalOptions="StartAndExpand"/>
+                    <Switch x:Name="SwitchAcceptTerms" Toggled="SwitchAcceptTerms_Toggled" IsToggled="False" HorizontalOptions="End" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

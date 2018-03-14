@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.TicketPage"
+             Title="Tickets">
+
+    <StackLayout Padding="12">
+        <Label Text="Pedidos" FontSize="18" FontAttributes="Bold" />
+        <Label Text="Aqui se encuentra tu lista de pedidos" FontSize="Small" TextColor="Gray" />
+        <Grid>
+            <StackLayout x:Name="ProgressElement" IsVisible="False">
+                <ActivityIndicator x:Name="ProgressIndicator" IsEnabled="True" IsRunning="True" />
+                <Label x:Name="ProgressText" Text="Cargando"/>
+            </StackLayout>
+            <ScrollView>
+                <Grid x:Name="TicketsTable">
+                
+                </Grid>
+            </ScrollView>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

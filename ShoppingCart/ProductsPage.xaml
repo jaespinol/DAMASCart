@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.ProductsPage"
+            Title="Android Shoping Cart"
+            BarBackgroundColor="#8ea226"
+            BarTextColor="White">
+
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem x:Name="BtnPerfil" Icon="perfil.png" Priority="1" Order="Primary" Text="Perfil" Clicked="BtnPerfil_Clicked" />
+        <ToolbarItem x:Name="BtnPedidos" Icon="pedidos.png" Priority="1" Order="Primary" Text="Pedidos" Clicked="BtnPedidos_Clicked" />
+        <ToolbarItem x:Name="BtnContacto" Priority="1" Order="Secondary" Text="Contacto" Clicked="BtnContacto_Clicked" />
+        <ToolbarItem x:Name="BtnCerrarSesion" Priority="1" Order="Secondary" Text="Cerrar sesión" Clicked="BtnCerrarSesion_Clicked" />
+    </TabbedPage.ToolbarItems>
+    
+</TabbedPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.CarPage"
+             Title="Carro de compras">
+
+    <Grid Padding="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="0">
+            <Label Text="Tu carrito" FontSize="18" FontAttributes="Bold" />
+            <Label Text="Aqui se muestra tu lista de productos seleccionados" FontSize="Small" TextColor="Gray" />
+            <ScrollView>
+                <Grid x:Name="CarTable">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+        <Grid Grid.Row="1">
+            <ActivityIndicator x:Name="Progress" IsRunning="True" IsVisible="False"/>
+            <StackLayout Grid.Row="1" x:Name="CompraContainer">
+                <Label Text="Ingresa tu dirección de envio" />
+                <Editor Grid.Column="0" x:Name="BoxDirection" />
+                <!--
+                    <Button Grid.Column="1" x:Name="CodeExchange" Clicked="CodeExchange_Clicked" Text="Canjear código" IsVisible="False"/>
+                -->
+                <Grid x:Name="EndContainer">
+
+                </Grid>
+                <Button Text="Confirmar compra" x:Name="BtnComprar" Clicked="BtnComprar_Clicked"/>
+            </StackLayout>
+        </Grid>
+    </Grid>
+
+</ContentPage>

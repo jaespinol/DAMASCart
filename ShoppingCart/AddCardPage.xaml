@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.AddCardPage"
+             Title="Agregar tarjeta">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="12">
+                <Label Text="Nombre que aparece en la tarjeta / propietario" />
+                <Entry x:Name="BoxHolderName" Text="{Binding full_name}" />
+                <Label Text="Numero de tarjeta" />
+                <Entry x:Name="BoxCardNumber" Keyboard="Numeric" />
+                <Label Text="CCV (Digitos traseros)" />
+                <Entry x:Name="BoxCCV" />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackLayout Grid.Column="0">
+                        <Label Text="Mes" />
+                        <Entry x:Name="BoxMonth" Keyboard="Numeric" />
+                    </StackLayout>
+                    <StackLayout Grid.Column="1">
+                        <Label Text="Año" />
+                        <Entry x:Name="BoxYear" Keyboard="Numeric" />
+                    </StackLayout>
+                </Grid>
+                <StackLayout x:Name="StackDirectionInfo">
+                    <Label Text="Estado" />
+                    <Entry x:Name="BoxState" Text="{Binding Provincia}" />
+                    <Label Text="Ciudad" />
+                    <Entry x:Name="BoxCity" Text="{Binding Ciudad}" />
+                    <Label Text="Codigo postal" />
+                    <Entry x:Name="BoxPostalCode" Text="{Binding CodigoPostal}" />
+                    <Label Text="Direccion" />
+                    <Entry x:Name="BoxLine1" Text="{Binding Direccion}" />
+                    <Label Text="Direccion 2" />
+                    <Entry x:Name="BoxLine2" />
+                    <Label Text="Referencias" />
+                    <Entry x:Name="BoxLine3" />
+                </StackLayout>
+                <Button Text="Guardar tarjeta" x:Name="BtnSave" Clicked="BtnSave_Clicked" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

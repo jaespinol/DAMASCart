@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.ProcessPaymentPage"
+             Title="Android Shoping Cart"
+             BackgroundColor="White">
+    <Grid>
+        <StackLayout x:Name="StackListCards" Padding="12">
+            <Label Text="Selecciona la tarjeta con la que deseas pagar" FontSize="Medium" />
+            <ListView x:Name="ListOfCards" BackgroundColor="Transparent" ItemTapped="ListOfCards_ItemTapped" ItemSelected="ListOfCards_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding CardNumber}" Detail="{Binding ExpirationDate}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Cancelar" x:Name="BtnCancelBuy" />
+        </StackLayout>
+        <Grid x:Name="FormCvvCard" IsVisible="False" Padding="12">
+            <BoxView Color="White" />
+            <StackLayout>
+                <Label Text="Ingresa el cvv para la siguiente tarjeta" FontSize="Medium" />
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Numero de tarjeta: " />
+                    <Label Text="{Binding CardNumber}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Vence el: " />
+                    <Label Text="{Binding ExpirationDate}" />
+                </StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Cvv: " Grid.Column="0" VerticalOptions="Center" />
+                    <Entry x:Name="BoxCvv" Grid.Column="1" />
+                </Grid>
+                <Button Text="Aceptar" x:Name="BtnContinue" Clicked="BtnContinue_Clicked" />
+            </StackLayout>
+        </Grid>
+        <Grid x:Name="ErrorMessage" IsVisible="False">
+            <BoxView Color="White" />
+            <StackLayout VerticalOptions="Center">
+                <Label Text="Debes agregar por lo menos una tarjeta." HorizontalTextAlignment="Center" FontSize="Medium"/>
+            </StackLayout>
+        </Grid>
+        <Grid x:Name="ProgressIndicator" IsVisible="False">
+            <WebView x:Name="OpenPayBackend" />
+            <BoxView Color="White" />
+            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                <ActivityIndicator IsRunning="True" IsEnabled="True" IsVisible="True" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="30" HeightRequest="30" />
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Forms"
+             x:Class="ShoppingCart.MainPage"
+             Title="Lista de productos">
+
+    <Grid Padding="12">
+        <Grid.RowDefinitions >
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <SearchBar Grid.Row="0" x:Name="TagSearch" Placeholder="Buscar..." SearchButtonPressed="TagSearch_SearchButtonPressed"/>
+        <StackLayout Grid.Row="1">
+            <Button x:Name="BtnGoToShop" Text="Items: 0, Total: $ 0" BackgroundColor="Gray" TextColor="White" Clicked="BtnGoToShop_Clicked"></Button>
+            <ActivityIndicator x:Name="ProgressElement" IsEnabled="True" IsRunning="False" IsVisible="False"></ActivityIndicator>
+        </StackLayout>
+        <ScrollView Grid.Row="2">
+            <StackLayout x:Name="RootLayout" Padding="10" Orientation="Vertical">
+                <!--<StackLayout Orientation="Horizontal">
+                    <Image WidthRequest="110" Source="product.jpg" HeightRequest="110"/>
+                    <StackLayout Orientation="Vertical" Padding="10">
+                        <Label Text="Titulo del item" FontAttributes="Bold" />
+                        <Label Text="Descripción del item" TextColor="Gray" FontSize="12" />
+                        <Label Text="Precio Qty +1: $ 50.00" TextColor="Green" FontSize="14" />
+                        <Label Text="Precio Qty +5: $ 24.00" TextColor="Red" FontSize="14" />
+                        <Label Text="Stock: 10" FontAttributes="Bold" FontSize="14" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Agregar al carrito: " VerticalTextAlignment="Center"/>
+                    <Entry x:Name="BoxAddItem" WidthRequest="60" Placeholder="0"></Entry>
+                    <Button Text="Aceptar" x:Name="BtnAddItem" Clicked="BtnAddItem_Clicked"/>
+                </StackLayout> -->
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

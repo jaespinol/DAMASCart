@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.UserProfilePage"
+            BarBackgroundColor="#8ea226"
+            BarTextColor="White"
+            Title="Perfil">
+
+    <ContentPage Title="Mis datos" x:Name="UserPage">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Agregar direccion" x:Name="BtnDireccion" Priority="1" Order="Primary" Clicked="BtnDireccion_Clicked" />
+        </ContentPage.ToolbarItems>
+        <StackLayout Padding="12" Spacing="0">
+            <StackLayout x:Name="StackUser">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nombre" FontAttributes="Bold"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Nombre}"/>
+                        <Label Text="{Binding Apellido}" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Correo" FontAttributes="Bold"/>
+                    <Label Text="{Binding Correo}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Teléfono" FontAttributes="Bold" />
+                    <Label Text="{Binding Telefono}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Nombre de usuario" FontAttributes="Bold" />
+                    <Label Text="{Binding Alias}" />
+                </StackLayout>
+            </StackLayout>
+            <StackLayout x:Name="StackDirection" IsVisible="False" Padding="0,12,0,0">
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Provincia" FontAttributes="Bold" />
+                    <Label Text="{Binding Provincia}"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Ciudad" FontAttributes="Bold" />
+                    <Label Text="{Binding Ciudad}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Dirección" FontAttributes="Bold" />
+                    <Label Text="{Binding Direccion}" />
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Código Postal" FontAttributes="Bold" />
+                    <Label Text="{Binding CodigoPostal}" />
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Tarjetas" x:Name="CardsPage">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Agregar" Priority="1" Order="Primary" x:Name="BtnAgregarTarjeta" Clicked="BtnAgregarTarjeta_Clicked"/>
+        </ContentPage.ToolbarItems>
+        <StackLayout Padding="12">
+            <ListView x:Name="ListOfCards" BackgroundColor="Transparent" ItemTapped="ListOfCards_ItemTapped" ItemSelected="ListOfCards_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding CardNumber}" Detail="{Binding ExpirationDate}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Mis compras" x:Name="BuiesPage" >
+        <StackLayout Padding="12">
+            <ListView x:Name="ListOfPurchases" BackgroundColor="Transparent" IsPullToRefreshEnabled="True" Refreshing="ListOfPurchases_Refreshing" ItemSelected="ListOfPurchases_ItemSelected" ItemTapped="ListOfPurchases_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50" />
+                                    <ColumnDefinition Width="150" />
+                                    <ColumnDefinition Width="50" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Text="{Binding IdTicket}" Grid.Column="0"/>
+                                <Label Text="{Binding Paqueteria}" Grid.Column="1"/>
+                                <StackLayout Grid.Column="2" Orientation="Horizontal">
+                                    <Label Text="$"/>
+                                    <Label Text="{Binding Total}"/>
+                                </StackLayout>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage>
+    
+</TabbedPage>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.SimpleListPage"
+             Title="Lista">
+
+    <StackLayout>
+        <ListView x:Name="ListItems" ItemTapped="ListItems_ItemTapped" ItemSelected="ListItems_ItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Spacing="0" Padding="12,0">
+                            <Image WidthRequest="60" HeightRequest="60" Source="{Binding Image}" Aspect="AspectFit" HorizontalOptions="Start" />
+                            <StackLayout Padding="12" HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Title}" FontSize="Medium" />
+                                <Label Text="{Binding Description}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

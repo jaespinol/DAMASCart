@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.AddGarantiaPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackLayout Padding="12" Grid.Row="0">
+            <Label Text="Garantia" FontSize="Medium"/>
+            <Label Text="Captura los datos del cliente para cubrir la garantia." />
+        
+            <Label Text="Nombre completo" Margin="0,20,0,0" />
+            <Entry Text="{Binding Nombre}"/>
+            <Label Text="Email"/>
+            <Entry Text="{Binding Email}"/>
+            <Label Text="Teléfono"/>
+            <Entry Text="{Binding Telefono}"/>
+            <Label Text="DNI"/>
+            <Entry Text="{Binding DNI}"/>
+        
+        </StackLayout>
+        <StackLayout Grid.Row="1" x:Name="StackAdd">
+            <Button Text="Guardar datos" x:Name="BtnContinuar" Clicked="BtnContinuar_Clicked"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

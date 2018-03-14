@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.ShopClient"
+             Title="Cliente">
+
+    <StackLayout Padding="12">
+        <Label x:Name="TicketFecha" Text="Fecha del ticket" FontAttributes="Bold" FontSize="Medium"/>
+        <Label Text="Datos" FontAttributes="Bold" FontSize="Medium"/>
+        <Label x:Name="ClientName" />
+        <Label x:Name="ClientEmail" />
+        <Label x:Name="ClientPhone" />
+        <Label Text="Dirección" FontAttributes="Bold" FontSize="Medium"/>
+        <Label x:Name="LocationOther" />
+        <Label x:Name="LocationCity" />
+        <Label x:Name="LocationCP" />
+        <Label x:Name="LocationDirection" />
+    </StackLayout>
+</ContentPage>

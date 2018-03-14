@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.LocationTask"
+             Title="Agregar ubicacion GPS">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="aceptar.png" Text="Aceptar" Order="Primary" Priority="1" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" Padding="12">
+            <Label Text="¿Dónde se ubica tu local?" HorizontalTextAlignment="Center" TextColor="Black"/>
+            <SearchBar x:Name="BoxSearch" SearchButtonPressed="BoxSearch_SearchButtonPressed" Placeholder="Buscar ..." HeightRequest="50"/>
+        </StackLayout>
+        <Grid Grid.Row="1" x:Name="GridMap">
+
+        </Grid>
+    </Grid>
+</ContentPage>

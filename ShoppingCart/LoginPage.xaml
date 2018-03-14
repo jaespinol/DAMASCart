@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.LoginPage"
+             Title="Android Shoping Cart">
+
+    <StackLayout Padding="12" VerticalOptions="Center">
+        <Label Text="Ingresa tu email"></Label>
+        <Entry x:Name="BoxUser"/>
+        <Label Text="Ingresa tu contraseña"></Label>
+        <Entry x:Name="BoxPassword" IsPassword="True"/>
+        <Button Text="Iniciar sesion" x:Name="BtnLogin" Clicked="BtnLogin_Clicked"/>
+        <Button Text="Registrarse" x:Name="BtnSignin" Clicked="BtnSignin_Clicked"/>
+        <Button Text="¿Olvidaste tu contraseña?" x:Name="BtnRecovery" Clicked="BtnRecovery_Clicked"/>
+    </StackLayout>
+    
+</ContentPage>

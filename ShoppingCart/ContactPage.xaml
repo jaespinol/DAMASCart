@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.ContactPage" Title="Contacto">
+
+    <StackLayout Padding="12" VerticalOptions="Center">
+        <Label x:Name="LabelEmail" Text="" HorizontalTextAlignment="Center" FontSize="Medium" />
+        <Label x:Name="LabelTelefono" Text="" HorizontalTextAlignment="Center" FontSize="Medium" />
+        <Label x:Name="LabelDireccion" Text="" HorizontalTextAlignment="Center" FontSize="Medium" />
+    </StackLayout>
+    
+</ContentPage>

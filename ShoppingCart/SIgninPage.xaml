@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingCart.SIgninPage"
+             Title="Registro">
+
+
+    <ScrollView>
+        <StackLayout Padding="12" VerticalOptions="Center">
+
+            <Label Text="Ingresa tu nombre"></Label>
+            <Entry x:Name="BoxNombre" Placeholder="nombre" />
+            <Label Text="Ingresa tus apellidos"></Label>
+            <Entry x:Name="BoxApellido" Placeholder="apellidos" />
+            <Label Text="Ingresa un correo electronico"></Label>
+            <Entry x:Name="BoxEmail" Placeholder="correo" />
+            <Label Text="Confirmar correo electronico"></Label>
+            <Entry x:Name="BoxEmailVerify" Placeholder="correo" />
+            <Label Text="Ingresa tu telefono"></Label>
+            <Entry x:Name="BoxTelefono" Placeholder="telefono" />
+            <Label Text="Ingresa un usuario"></Label>
+            <Entry x:Name="BoxUsuario" Placeholder="usuario" />
+            <Label Text="Ingresa una contraseña"></Label>
+            <Entry x:Name="BoxPassword" IsPassword="True" Placeholder="••••••••" />
+            <Button x:Name="Registrarse" Text="Registrarse" Clicked="Registrarse_Clicked"/>
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
